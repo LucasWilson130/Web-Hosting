@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - The Cozy Cafe</title>
+    <meta
+      name="description"
+      content="Scroll through The Cozy Cafe's delicious menu. You will find all kinds of coffees, teas, pastries, and light meals. Download our full menu below."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo" aria-label="The Cozy Cafe Homepage"
+          >The Cozy Cafe</a
+        >
+        <nav aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Homepage</a></li>
+            <li>
+              <a href="menu.html" class="active" aria-current="page">Menu</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="page-hero menu-hero"
+        role="banner"
+        aria-labelledby="menu-hero-heading"
+      >
+        <div class="container">
+          <h1 id="menu-hero-heading">Our Delicious Servings</h1>
+          <p>Made with care, just for you.</p>
+        </div>
+      </section>
+
+      <section class="menu-sections" aria-labelledby="menu-category-heading">
+        <div class="container">
+          <h2 id="menu-category-heading" class="visually-hidden">
+            Our Menu Categories
+          </h2>
+
+          <div class="menu-category" id="coffee-section">
+            <h3>Coffee</h3>
+            <div class="menu-items-grid">
+              <div class="menu-item">
+                <h4>Espresso</h4>
+                <p>Rich and intense, the foundation of all great coffee.</p>
+                <span class="price">$3.50</span>
+              </div>
+              <div class="menu-item">
+                <h4>Latte</h4>
+                <p>
+                  Smooth espresso with steamed milk and a thin layer of foam.
+                </p>
+                <span class="price">$4.80</span>
+              </div>
+              <div class="menu-item">
+                <h4>Cappuccino</h4>
+                <p>
+                  Espresso, steamed milk, and a generous cap of frothed milk.
+                </p>
+                <span class="price">$4.80</span>
+              </div>
+              <div class="menu-item">
+                <h4>Americano</h4>
+                <p>Espresso diluted with hot water, similar to drip coffee.</p>
+                <span class="price">$4.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Flat White</h4>
+                <p>
+                  Espresso with velvety steamed milk, less foam than a latte.
+                </p>
+                <span class="price">$4.80</span>
+              </div>
+              <div class="menu-item">
+                <h4>Mocha</h4>
+                <p>
+                  Chocolate-infused espresso with steamed milk and whipped
+                  cream.
+                </p>
+                <span class="price">$5.50</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category" id="tea-section">
+            <h3>Tea & Other Beverages</h3>
+            <div class="menu-items-grid">
+              <div class="menu-item">
+                <h4>English Breakfast</h4>
+                <p>Classic black tea, robust and invigorating.</p>
+                <span class="price">$4.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Green Tea</h4>
+                <p>Refreshing and antioxidant-rich.</p>
+                <span class="price">$4.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Chai Latte</h4>
+                <p>Spiced black tea with steamed milk.</p>
+                <span class="price">$5.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Hot Chocolate</h4>
+                <p>Rich, creamy, and comforting.</p>
+                <span class="price">$4.50</span>
+              </div>
+              <div class="menu-item">
+                <h4>Fresh Juice</h4>
+                <p>Orange, Apple, or Mixed Berry.</p>
+                <span class="price">$6.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-category" id="food-section">
+            <h3>Food & Pastries</h3>
+            <div class="menu-items-grid">
+              <div class="menu-item">
+                <h4>Croissant</h4>
+                <p>Flaky, buttery, perfect for breakfast.</p>
+                <span class="price">$4.50</span>
+              </div>
+              <div class="menu-item">
+                <h4>Almond Croissant</h4>
+                <p>Classic croissant with a sweet almond filling.</p>
+                <span class="price">$5.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Muffin</h4>
+                <p>Daily selection of blueberry, chocolate chip, or bran.</p>
+                <span class="price">$4.00</span>
+              </div>
+              <div class="menu-item">
+                <h4>Sourdough Toastie</h4>
+                <p>Ham & Cheese, or Tomato & Cheese.</p>
+                <span class="price">$9.50</span>
+              </div>
+              <div class="menu-item">
+                <h4>Seasonal Fruit Salad</h4>
+                <p>Freshly cut seasonal fruits.</p>
+                <span class="price">$7.00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-download-section">
+            <h3>Full Menu Download</h3>
+            <p>
+              Do you prefer a printable version? No problem! Download our
+              complete menu as a PDF.
+            </p>
+            <a
+              href="docs/the-cozy-cafe-menu.pdf"
+              download="TheCozyCafeMenu.pdf"
+              class="btn btn-secondary"
+              >Download Our Menu (PDF)</a
+            >
+            <p class="note">
+              Important note: Sometimes our prices and availability might
+              change.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>The Cozy Cafe</h3>
+            <p>
+              Your local haven for exceptional coffee and delightful treats.
+              We're passionate about creating memorable experiences.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-info">
+            <h3>Visit Us</h3>
+            <address>
+              <p>45 Taunton Dr, Cheltenham</p>
+              <p>Melbourne, Victoria 3192</p>
+              <p>Australia</p>
+            </address>
+            <p>Phone Number: <a href="tel:+61422787247">61-4-2278-7247</a></p>
+            <p>
+              Email:
+              <a href="mailto:info@thecozycafe.com.au"
+                >info@thecozycafe.com.au</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year-menu"></span> The Cozy Cafe. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year-menu").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

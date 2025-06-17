@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - The Cozy Cafe</title>
+    <meta
+      name="description"
+      content="Get in touch with us at The Cozy Cafe! Find out where we are located on the map, check when we are open, and use our contact form for inquiries."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo" aria-label="The Cozy Cafe Homepage"
+          >The Cozy Cafe</a
+        >
+        <nav aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li>
+              <a href="contact.html" class="active" aria-current="page"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="page-hero contact-hero"
+        role="banner"
+        aria-labelledby="contact-hero-heading"
+      >
+        <div class="container">
+          <h1 id="contact-hero-heading">Get in touch with us</h1>
+          <p>We will love to hear from you!</p>
+        </div>
+      </section>
+
+      <section
+        class="contact-details-section"
+        aria-labelledby="details-heading"
+      >
+        <div class="container">
+          <h2 id="details-heading" class="visually-hidden">
+            Our Contact Details
+          </h2>
+          <div class="contact-grid">
+            <div class="contact-info-block">
+              <h3>Our Location</h3>
+              <address>
+                <p>45 Taunton Dr, Cheltenham</p>
+                <p>Melbourne, Victoria 3192</p>
+                <p>Australia</p>
+              </address>
+              <p>
+                You can access us by taking public transport and with parking
+                nearby.
+              </p>
+            </div>
+            <div class="contact-info-block">
+              <h3>Opening Hours</h3>
+              <ul>
+                <li>
+                  Monday - Friday: <time datetime="07:30">7:30 AM</time> -
+                  <time datetime="19:00">7:30 PM</time>
+                </li>
+                <li>
+                  Saturday - Sunday: <time datetime="07:30">7:30 AM</time> -
+                  <time datetime="20:30">8:30 PM</time>
+                </li>
+                <li>
+                  In regards to public holidays, please check our social media
+                </li>
+              </ul>
+            </div>
+            <div class="contact-info-block">
+              <h3>Direct Contact</h3>
+              <p>Phone: <a href="tel:+61422787247">61-4-2278-7247</a></p>
+              <p>
+                Email:
+                <a href="mailto:info@thecozycafe.com.au"
+                  >info@thecozycafe.com.au</a
+                >
+              </p>
+              <p>
+                Follow us on
+                <a
+                  href="https://facebook.com/thecozycafe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+                and
+                <a
+                  href="https://instagram.com/thecozycafe"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-map-section" aria-labelledby="map-heading">
+        <div class="container">
+          <h2 id="map-heading">Find Us on the Map</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.879796853874!2d144.96208571531998!3d-37.81754027975107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b36b2f7d9f%3A0x504567812571250!2sFlinders%20Street%20Station!5e0!3m2!1sen!2sau!4v1678888888888!5m2!1sen!2sau"
+              width="800"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Location of The Cozy Cafe on Google Maps near Cheltenham Train station in Victoria"
+            ></iframe>
+          </div>
+          <p class="map-accessibility-note">
+            Our cafe is located on Coffee Lane where you can take a short walk
+            to get to us from public transport hubs.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form-section" aria-labelledby="form-heading">
+        <div class="container">
+          <h2 id="form-heading">Contact Us</h2>
+          <form action="submit-form.php" method="POST" class="contact-form">
+            <p>
+              Do you have any questions or comments? Fill out the form below and
+              we'll get back to you when we can.
+            </p>
+            <div class="form-group">
+              <label for="name"
+                >Your Name: <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="name"
+                name="user_name"
+                autocomplete="name"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >Your Email: <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                id="email"
+                name="user_email"
+                autocomplete="email"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="message_subject"
+                autocomplete="off"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message"
+                >Your Message: <span class="required">*</span></label
+              >
+              <textarea
+                id="message"
+                name="user_message"
+                rows="6"
+                required
+                aria-required="true"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>The Cozy Cafe</h3>
+            <p>
+              Your local haven for great tasting coffee and delicious treats.
+              We're passionate about creating memories that will last a lifetime
+              for you.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="#privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact-info">
+            <h3>Visit Us</h3>
+            <address>
+              <p>45 Taunton Dr, Cheltenham</p>
+              <p>Melbourne, Victoria 3192</p>
+              <p>Australia</p>
+            </address>
+            <p>Phone: <a href="tel:+61398765432">(03) 9876 5432</a></p>
+            <p>
+              Email:
+              <a href="mailto:info@thecozycafe.com.au"
+                >info@thecozycafe.com.au</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="current-year-contact"></span> The Cozy Cafe. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("current-year-contact").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
